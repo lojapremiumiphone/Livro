@@ -1,0 +1,294 @@
+/* Estilo geral */
+body {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+    background: url('imagens/bandeira-brasil.jpg') no-repeat center center fixed; /* Imagem centralizada */
+    background-size: cover; /* A imagem cobre toda a tela proporcionalmente */
+    height: 100%; /* Garante que o fundo cobre toda a altura da página */
+    color: #333;
+    line-height: 1.6;
+    overflow-x: hidden; /* Remove barras horizontais, caso existam */
+}
+
+
+
+
+/* Overlay */
+body::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(255, 255, 255, 0.3); /* Opacidade reduzida */
+    z-index: -1;
+}
+
+
+
+/* Cabeçalho */
+header {
+    text-align: center;
+    padding: 20px;
+    background: #002776;
+    color: #FFD700;
+    border-bottom: 3px solid #FFD700;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+header h1, .produto h2, .descricao, .preco {
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* Sombra no texto */
+}
+
+
+header p {
+    font-size: 1.2em;
+    margin: 10px 0 0;
+}
+
+/* Container do produto */
+.produto {
+    max-width: 600px;
+    margin: 30px auto;
+    background: #fff;
+    padding: 20px;
+    border-radius: 15px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+    text-align: center;
+    border: 3px solid #FFD700;
+}
+
+/* Imagem */
+.produto img {
+    max-width: 50%;
+    height: auto;
+    margin: 20px auto;
+    display: block;
+}
+
+/* Título */
+.titulo-principal {
+    font-family: 'Playfair Display', serif;
+    font-size: 1.8em;
+    color: #222;
+    margin: 15px 0;
+}
+
+/* Destaques */
+.destaque {
+    color: #008000;
+    font-weight: bold;
+}
+
+/* Descrição */
+.descricao {
+    font-size: 1.2em;
+    color: #555;
+    margin: 15px 0;
+    line-height: 1.8;
+}
+
+/* Preço */
+.preco {
+    font-size: 1.6em;
+    font-weight: bold;
+    color: #008000;
+    background: #f0fdf4;
+    padding: 10px;
+    border: 2px solid #008000;
+    border-radius: 5px;
+    display: inline-block;
+}
+
+/* Urgência */
+#urgencia {
+    font-size: 1em;
+    color: #ff0000;
+    margin: 10px 0;
+    font-weight: bold;
+}
+
+/* Estoque */
+.estoque {
+    font-size: 1em;
+    color: #ff0000;
+    margin: 5px 0 20px;
+}
+
+/* Botão */
+.botao-comprar {
+    display: inline-block;
+    padding: 15px 30px;
+    background: #008000;
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 1.2em;
+    border-radius: 10px;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.botao-comprar:hover {
+    background: #FFD700;
+    color: #000;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
+    transform: scale(1.05);
+}
+
+/* Selos */
+.selos {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    margin-top: 20px;
+}
+
+.selos img {
+    max-width: 80px;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+/* Rodapé */
+footer {
+    text-align: center;
+    padding: 15px;
+    background: #002776;
+    color: #FFD700;
+    border-top: 3px solid #FFD700;
+    font-size: 0.9em;
+}
+
+html, body {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%; /* Garante que o fundo ocupa toda a altura da janela */
+    overflow-x: hidden; /* Remove barras horizontais */
+}
+
+body {
+    background: url('imagens/bandeira-brasil.jpg') no-repeat center center fixed;
+    background-size: cover; /* Imagem cobre toda a área */
+    color: #333;
+    line-height: 1.6;
+}
+/* Estilo da seção de urgência */
+.urgencia {
+    text-align: center;
+    margin-top: 20px;
+    padding: 10px;
+    background: linear-gradient(45deg, #ffdce0, #ffcccb); /* Gradiente suave de alerta */
+    border: 2px solid #ff0000; /* Borda vermelha */
+    border-radius: 10px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+/* Tempo restante */
+.tempo-restante {
+    font-size: 1.5em; /* Tamanho maior para chamar atenção */
+    font-weight: bold;
+    color: #ff0000; /* Vermelho para urgência */
+    margin: 10px 0;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.3);
+}
+
+/* Estoque baixo */
+.estoque-baixo {
+    font-size: 1.2em;
+    color: #800000; /* Vermelho mais escuro */
+    margin: 5px 0;
+    font-weight: bold;
+}
+
+/* Ajuste na seção de urgência */
+.urgencia {
+    text-align: center;
+    margin: 20px auto; /* Centralizado com espaçamento reduzido */
+    padding: 15px; /* Espaço interno ajustado */
+    background: linear-gradient(45deg, #ffdce0, #ffcccb); /* Gradiente de alerta */
+    border: 2px solid #ff0000; /* Borda vermelha */
+    border-radius: 10px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+    max-width: 600px; /* Limita a largura */
+}
+
+/* Tempo restante */
+.tempo-restante {
+    font-size: 1.4em; /* Tamanho ajustado */
+    font-weight: bold;
+    color: #ff0000;
+    margin: 10px 0; /* Espaço reduzido entre os textos */
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.3);
+}
+
+/* Estoque baixo */
+.estoque-baixo {
+    font-size: 1.1em; /* Tamanho mais uniforme */
+    color: #800000;
+    margin: 5px 0; /* Espaçamento reduzido */
+    font-weight: bold;
+}
+
+/* Botão principal */
+.botao-comprar {
+    display: inline-block;
+    margin: 25px auto; /* Espaçamento ajustado abaixo da urgência */
+    padding: 15px 30px;
+    background: #008000;
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 1.2em;
+    border-radius: 10px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+    transition: all 0.3s ease;
+}
+
+/* Selos */
+.selos {
+    margin: 20px auto; /* Espaçamento mais harmonioso */
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.selos img {
+    max-width: 80px;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.2);
+}
+
+header {
+    background: linear-gradient(90deg, #002776, #004ba0); /* Gradiente azul */
+    padding: 20px 10px;
+    text-align: center;
+    border-bottom: 3px solid #FFD700; /* Linha inferior dourada */
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2); /* Sombra para destaque */
+}
+
+header h1 {
+    font-family: 'Merriweather', serif; /* Fonte elegante para o título */
+    font-size: 2.5em; /* Tamanho maior para destaque */
+    color: #FFD700; /* Dourado patriótico */
+    margin: 0;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.4); /* Sombra para destacar */
+}
+
+header p {
+    font-family: 'Roboto', sans-serif;
+    font-size: 1.2em;
+    color: #FFFFFF; /* Branco para contraste */
+    margin-top: 10px;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.3); /* Sombra suave */
+}
+
+header p span {
+    color: #FFD700; /* Dourado para destacar palavras importantes */
+    font-weight: bold;
+}
